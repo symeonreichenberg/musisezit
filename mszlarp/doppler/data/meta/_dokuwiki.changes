@@ -1,0 +1,16 @@
+1737543885	fe80::193d:5795:9193:91ae	C	start		created		5
+1737543967	fe80::193d:5795:9193:91ae	E	start				89
+1737543996	fe80::193d:5795:9193:91ae	C	quote		created		26
+1737544036	fe80::193d:5795:9193:91ae	C	about		created		22
+1737544049	fe80::193d:5795:9193:91ae	C	skills		created		27
+1737544062	fe80::193d:5795:9193:91ae	C	work		created		30
+1737699674	127.0.0.1	E	start		external edit		0
+1737701294	::1	E	start				133
+1737701314	127.0.0.1	D	quote		removed - external edit (Unknown date)		-26
+1737701315	::1	C	quote		created		85
+1737701353	::1	C	ohre		created		851
+1737701445	::1	C	jetoprome		created		1360
+1737701617	::1	C	prakticke		created		1924
+1737701656	::1	C	prihlaska		created		317
+1737701749	::1	C	kontakt		created		692
+1737701761	::1	E	kontakt				12

@@ -1,0 +1,15 @@
+====== Musí se žít ======
+===== larp =====
+==== admin page ====
+
+[[quote|Úvodní citát]]
+
+[[ohre|O hře]]
+
+[[jetoprome|Je to pro mě?]]
+
+[[prakticke|Praktické]]
+
+[[prihlaska|Přihláška]]
+
+[[kontakt|Kontakt a autorstvo]]
