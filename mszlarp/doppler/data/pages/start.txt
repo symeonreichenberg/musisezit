@@ -4,11 +4,32 @@
 
 [[quote|Úvodní citát]]
 
+NADPISY
+
+[[headline-ohre|O hře]]
+
+[[headline-jetoprome|Je to pro mě?]]
+
+[[headline-prakticke|Praktické]]
+
+[[headline-prihlaska|Přihláška]]
+
+[[headline-kontakt|Kontakt a autorstvo]]
+
+TEXTY
+
 [[ohre|O hře]]
 
-[[jetoprome|Je to pro mě?]]
 
-[[prakticke|Praktické]]
+Praktické
+
+[[kdyakde|Kdy a kde?]]
+
+[[cenaastorno|Cesta a storno]]
+
+[[kostymapostavy|Kostým a postavy]]
+
+[[omezeni|Omezení?]]
 
 [[prihlaska|Přihláška]]
 

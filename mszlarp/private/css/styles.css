@@ -1,44 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&family=Poiret+One&display=swap");
-body {z-index:5;font-family: 'Montserrat',Arial,sans-serif;color:#fff6a9!important;background: #000;
-			background-image: linear-gradient(75deg,#000 0%,
-				#131313 5%,#111 5%,
-				#111 12%,#131313 12%,
-				#131313 20%,#111 20%,
-				#111 25%,#131313 25%,
-				#131313 30%,#111 30%,
-				#111 40%,#131313 40%,
-				#131313 48%,#111 48%,
-				#111 60%,#131313 60%,
-				#131313 70%,#111 70%,
-				#111 80%,#131313 80%,
-				#131313 90%,#111 90%,
-				#111 100%);
-			background-attachment: fixed;}
+body {z-index:5;font-family: 'Montserrat',Arial,sans-serif;color:#fff6a9!important;background: #000;background-image: linear-gradient(75deg,#000 0%,#131313 5%,#111 5%,#111 12%,#131313 12%,#131313 20%,#111 20%,#111 25%,#131313 25%,#131313 30%,#111 30%,#111 40%,#131313 40%,#131313 48%,#111 48%,#111 60%,#131313 60%,#131313 70%,#111 70%,#111 80%,#131313 80%,#131313 90%,#111 90%,#111 100%);background-attachment: fixed;}
 header {font-family: 'Poiret One',Arial,sans-serif;text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;color: #fff6a9;text-align: center;
 background-image: url(../img/bar.jpg); background-repeat: no-repeat;background-position: center;background-size: cover;}
 header p {font-size: 3rem;-webkit-animation:fade-in 150s;animation:fade-in 150s;}
-section {min-height: 80vh; display: flex;justify-content: space-around; align-items: center; padding: 10rem 0; position: relative;}
+section {min-height: 70vh; display: flex;justify-content: space-around; align-items: center; padding: 10rem 0; position: relative;}
 .text {transform: rotate(-1deg);}
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {font-family: 'Poiret One',Arial,sans-serif;}
-h1, .h1 {font-weight: 200; font-size:10rem;animation: blink 12s infinite;-webkit-animation: blink 12s infinite; }
-h2, .h2 {font-weight: 500; font-size:8rem;animation: blink 22s infinite;-webkit-animation: blink 22s infinite;text-shadow: 3px 0px 10px #000;}
-h3, .h3 {font-weight: 500; font-size:8rem;margin-top: 6rem;margin-bottom: 2rem; color: #A4F4DD;text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000;}
-h4, .h4 {font-weight: 500; font-size:5rem;margin-top: 6rem;margin-bottom: 2rem;}
-h5, .h5 {font-weight: 500; font-size:3rem;margin-top: 6rem;margin-bottom: 2rem;}
+h1, .h1 {font-weight: 200; font-size:6rem;animation: blink 12s infinite;-webkit-animation: blink 12s infinite; }
+h2, .h2 {font-weight: 500; font-size:5rem;animation: blink 22s infinite;-webkit-animation: blink 22s infinite;text-shadow: 3px 0px 10px #000;}
+h3, .h3 {font-weight: 500; font-size:4rem;margin-top: 6rem;margin-bottom: 2rem; color: #A4F4DD;text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000;}
+h4, .h4 {font-weight: 500; font-size:3rem;margin-top: 6rem;margin-bottom: 2rem;}
+h5, .h5 {font-weight: 500; font-size:2rem;margin-top: 6rem;margin-bottom: 2rem;}
 .quote a {text-shadow: 3px 0px 10px #000;}
 strong, .strong, b, .b, bold, .bold {color: #A4F4DD !important; font-weight: 700;}
+@media (max-width: 1000px) {
+	header p {font-size: 2rem;}
+}
 @media (max-width: 768px) {
-	section {transform: rotate(-.5deg);}
-	h1, .h1 {font-size: 7rem;}
-	h2, .h2 {font-size: 4rem;}
-	h3, .h3 {font-size: 6rem;}
-	h4, .h4 {font-size: 4rem;}
+	section {transform: rotate(0deg) !important;}
+	h1, .h1 {font-size: 4rem;}
+	h2, .h2 {font-size: 3rem;}
+	h3, .h3 {font-size: 2rem;}
+	h4, .h4 {font-size: 2rem;}
 	.quote a {background-color: transparent; padding: 0; border-radius: 0;}
 	.quote {background-color: rgba(0, 0, 0, 0.3); padding: 1rem 3rem; border-radius: 3rem;}
 }
-p, .p, ul, li {font-size: 2rem;}
-a {text-decoration: none; color:#fff6a9;transition: all 2s; border-bottom: 3px dotted transparent;}
+/*p, .p, ul, li {font-size: 2rem;}*/
+header a {text-decoration: none;}
+p a {text-decoration: none; color:#fff6a9;transition: border 2s ease; border-bottom: 3px dotted transparent;}
 a:hover,a:focus,a:active{color:#ffa500;text-decoration: none; border-bottom: 3px dotted #ffa500;}
 .mw-100{max-width: 100%;}
 .anchor{display:block;height:0;margin-top:3rem;visibility:hidden;}
@@ -50,20 +40,20 @@ footer, nav {background:#222;}
 footer img {height:10rem; padding:2rem;}
 .bold {font-weight: 700}
 .navbar-default{background-color: #111;border-color:#222;}
-.navbar-nav li {text-transform:uppercase;font-size:2rem;}
-.navbar-default .navbar-nav>li>a{color:#fff6a9;transition: all 2s;opacity:.6;}
-.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:active,.navbar-default .navbar-nav>li>a:focus{opacity:1;text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;color: #fff6a9;}
-@media (max-width: 768px) {
-	.navbar-default .navbar-nav>li>a{color:#fff6a9;transition: all 2s;opacity:.8;}
-}
+.navbar-nav {--bs-nav-link-color: :#fff6a9; --bs-nav-link-hover-color: #ffa500;}
+.nav-link {transition: text-shadow 2s ease-in-out, opacity 2s ease-in-out, border 0.5s ease-in-out; border-bottom: 3px dotted transparent !important;text-transform:uppercase;}
+.nav-link:focus, .nav-link:hover {opacity:1;text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+			color: #fff6a9!important;border-bottom: 3px dotted #ffa500!important;}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {transition: text-shadow 2s;opacity:1;text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+			color: #fff6a9!important;border-bottom: 3px dotted #ffa500!important;}
+.navbar-brand, .navbar-toggler-icon {border:none!important; animation: blink 10s infinite;-webkit-animation: blink 10s infinite; font-family: 'Poiret One',Arial,sans-serif;text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;color: #fff6a9!important;}
+.navbar-brand:focus, .navbar-brand:hover {color: #fff6a9!important;}
+.navbar-toggler {border-color: #ffa500!important;}
+.navbar-
 .vh-50 {min-height: 50vh;align-items:center;}
 .vh-100 {min-height: 100vh;align-items:center;}
-@media (min-width: 768px) {
-	.navbar-collapse.collapse{display:flex!important;justify-content:space-between;}
-}
 @media (max-width: 768px) {
 	body {background-position:center;}
-	.navbar-collapse .logo {display: none;}
 	.border-left{border-left:0px solid #272727;}
 	.pl-5 {padding-left:1.5rem !important;}
 }
@@ -104,14 +94,14 @@ footer img {height:10rem; padding:2rem;}
 	33%,46%,61%,65% {opacity:.4;}
 }
 .bg-img {
-	opacity: 0.65;
+	/*opacity: 0.65;*/
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.bg-doppler {
-	background-image: url(../img/doppler.jpg);
+.bg-header {
+	background-image: url(../img/policie.jpg);
 }
 .bg-trabant {
 	background-image: url(../img/trabant.jpg);
@@ -119,8 +109,8 @@ footer img {height:10rem; padding:2rem;}
 .bg-mikrak {
 	background-image: url(../img/mikrak.jpg);
 }
-.bg-stan {
-	background-image: url(../img/stan.jpg);
+.bg-prihlaska {
+	background-image: url(../img/postel.jpg);
 }
 .bg-plaz {
 	background-image: url(../img/plaz.jpg);

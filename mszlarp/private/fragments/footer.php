@@ -9,11 +9,15 @@
 		</div>
 	</div>
 </footer>
-<script src="private/js/jquery.min.js"></script>
-<script src="private/js/bootstrap.min.js"></script>
-<script src="private/js/jquery.easing.min.js"></script>
-<script src="private/js/wow.js"></script>
-<script src="private/js/scripts.js"></script>
 <script>
+const navLinks = document.querySelectorAll('.nav-link');
+const navbarCollapse = document.querySelector('.navbar-collapse');
 
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+      toggle: true,
+    });
+  });
+});
 </script>
