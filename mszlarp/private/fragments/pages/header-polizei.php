@@ -1,6 +1,5 @@
-<div class="bg-img bg-header"></div>
-<header class="">
-	<div class="container" style="opacity: 1!important;">
+<header class="bg-img bg-header-polizei">
+	<div class="container">
 		<div class="row">
 			<div class="col">
 				<h1><a href="#o-hre" class="page-scroll">Musí se žít</a></h1>

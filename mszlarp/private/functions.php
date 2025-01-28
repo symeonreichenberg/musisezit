@@ -3,6 +3,14 @@
 		$length = strlen( $needle );
 		return substr( $haystack, 0, $length ) === $needle;
 	}
+	function usePlainText($path) {
+		$admin_path = 'doppler/data/pages/';
+		$file = file_get_contents($admin_path . $path . '.txt');
+		$rows = explode("\n", $file);
+		foreach($rows as $row) {
+			echo $row;
+		}
+	}
 	function useText($path) {
 		$admin_path = 'doppler/data/pages/';
 		$file = file_get_contents($admin_path . $path . '.txt');

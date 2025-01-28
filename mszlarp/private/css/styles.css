@@ -5,28 +5,32 @@ header {font-family: 'Poiret One',Arial,sans-serif;text-shadow: 0 0 5px #ffa500,
 background-image: url(../img/bar.jpg); background-repeat: no-repeat;background-position: center;background-size: cover;}
 header p {font-size: 3rem;-webkit-animation:fade-in 150s;animation:fade-in 150s;}
 section {min-height: 70vh; display: flex;justify-content: space-around; align-items: center; padding: 10rem 0; position: relative;}
-.text {transform: rotate(-1deg);}
+.text > div {transform: rotate(-1deg);}
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {font-family: 'Poiret One',Arial,sans-serif;}
-h1, .h1 {font-weight: 200; font-size:6rem;animation: blink 12s infinite;-webkit-animation: blink 12s infinite; }
-h2, .h2 {font-weight: 500; font-size:5rem;animation: blink 22s infinite;-webkit-animation: blink 22s infinite;text-shadow: 3px 0px 10px #000;}
-h3, .h3 {font-weight: 500; font-size:4rem;margin-top: 6rem;margin-bottom: 2rem; color: #A4F4DD;text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000;}
+h1, .h1 {font-weight: 200; font-size:8rem;animation: blink 12s infinite;-webkit-animation: blink 12s infinite; }
+h2, .h2 {font-weight: 500; font-size:7rem;animation: blink 22s infinite;-webkit-animation: blink 22s infinite;text-shadow: 3px 0px 10px #000;}
+h3, .h3 {font-weight: 500; font-size:6rem;margin-top: 6rem;margin-bottom: 2rem; color: #A4F4DD;text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000;}
 h4, .h4 {font-weight: 500; font-size:3rem;margin-top: 6rem;margin-bottom: 2rem;}
 h5, .h5 {font-weight: 500; font-size:2rem;margin-top: 6rem;margin-bottom: 2rem;}
 .quote a {text-shadow: 3px 0px 10px #000;}
 strong, .strong, b, .b, bold, .bold {color: #A4F4DD !important; font-weight: 700;}
 @media (max-width: 1000px) {
+	h1, .h1 {font-size: 6rem;}
+	h2, .h2 {font-size: 5rem;}
+	h3, .h3 {font-size: 4rem;}
 	header p {font-size: 2rem;}
 }
 @media (max-width: 768px) {
-	section {transform: rotate(0deg) !important;}
+	.text > div {transform: rotate(0deg) !important;}
 	h1, .h1 {font-size: 4rem;}
 	h2, .h2 {font-size: 3rem;}
-	h3, .h3 {font-size: 2rem;}
-	h4, .h4 {font-size: 2rem;}
+	h3, .h3 {font-size: 4rem;}
+	h4, .h4 {font-size: 3rem;}
 	.quote a {background-color: transparent; padding: 0; border-radius: 0;}
 	.quote {background-color: rgba(0, 0, 0, 0.3); padding: 1rem 3rem; border-radius: 3rem;}
 }
-/*p, .p, ul, li {font-size: 2rem;}*/
+.foto {border: 1rem dotted rgba(0,0,0,0.3);opacity:.7;padding:.4rem;transition:opacity 1s ease;}
+.foto:hover, .foto:focus {border: 1rem dotted rgba(0,0,0,0.5);opacity:1;}
 header a {text-decoration: none;}
 p a {text-decoration: none; color:#fff6a9;transition: border 2s ease; border-bottom: 3px dotted transparent;}
 a:hover,a:focus,a:active{color:#ffa500;text-decoration: none; border-bottom: 3px dotted #ffa500;}
@@ -93,25 +97,10 @@ footer img {height:10rem; padding:2rem;}
 	32%,34%,45%,47%,62%,63%,65%,67% {opacity:1;}
 	33%,46%,61%,65% {opacity:.4;}
 }
-.bg-img {
-	/*opacity: 0.65;*/
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.bg-header {
-	background-image: url(../img/policie.jpg);
-}
-.bg-trabant {
-	background-image: url(../img/trabant.jpg);
-}
-.bg-mikrak {
-	background-image: url(../img/mikrak.jpg);
-}
-.bg-prihlaska {
-	background-image: url(../img/postel.jpg);
-}
-.bg-plaz {
-	background-image: url(../img/plaz.jpg);
-}
+.bg-img {opacity: 0.55;background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}
+.bg-header {background-image: url(../img/doppler.jpg); background-position: center bottom !important;position: absolute; height: 100vh; width: 100%;}
+.bg-header-polizei {background-image: url(../img/policie.jpg);position: absolute; height: 100vh; width: 100%;}
+.bg-prakticke {background-image: url(../img/trabant.jpg);}
+.bg-jetoprome {background-image: url(../img/mikrak.jpg);}
+.bg-prihlaska {background-image: url(../img/postel.jpg);}
+.bg-kontakt {background-image: url(../img/plaz.jpg);}

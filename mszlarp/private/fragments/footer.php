@@ -15,9 +15,11 @@ const navbarCollapse = document.querySelector('.navbar-collapse');
 
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
-    const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-      toggle: true,
-    });
+    if (window.innerWidth < 992) { // Zavřít jen na malých obrazovkách
+      const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+        toggle: true,
+      });
+    }
   });
 });
 </script>
